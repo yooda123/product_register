@@ -11,5 +11,4 @@ WORKDIR /product-register
 COPY Gemfile Gemfile.lock /product-register/
 RUN bundle install
 COPY . .
-RUN sudo rm -rf tmp
 CMD ["rails", "s"]
